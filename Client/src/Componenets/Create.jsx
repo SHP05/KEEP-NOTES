@@ -8,7 +8,7 @@ const Create = () =>{
   const navigate = useNavigate();
   const submitHandeler = (e) =>{
       e.preventDefault();
-      axios.post('http://localhost:3001/create',{title,task})
+      axios.post('https://task-manager-mern-app.vercel.app/create',{title,task})
       .then(result=>console.log(result))
       .catch(err=>console.log(err))
       navigate('/')
