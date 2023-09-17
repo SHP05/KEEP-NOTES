@@ -11,7 +11,7 @@ const UpdateUser = () =>{
     const navigate = useNavigate();
 
     useEffect(()=>{
-        axios.get('http://localhost:3001/gettask/'+id)
+        axios.get('https://task-manager-mern-app.vercel.app/gettask/'+id)
         .then(result=>{
             // console.log(result)
             setTitle(result.data.title)
@@ -23,7 +23,7 @@ const UpdateUser = () =>{
     const updateHandeler = (e) =>{
         e.preventDefault();
         console.log(Title,Task)
-        axios.put('http://localhost:3001/update/'+id, {Title,Task} )
+        axios.put('https://task-manager-mern-app.vercel.app/update/'+id, {Title,Task} )
         .then(result=>{
           console.log(result)
           navigate('/')     
