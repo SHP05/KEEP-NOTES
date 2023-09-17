@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors(
   {
-    origin: ["https://task-manager-mern-frontend-app-y9rc.vercel.app/"],
+    origin: ["https://task-manager-mern-frontend-app-y9rc.vercel.app"],
     methods: ["GET","POST","PUT","DELETE"],
     credentials: true
   }
