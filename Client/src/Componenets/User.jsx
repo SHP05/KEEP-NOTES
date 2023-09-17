@@ -10,7 +10,7 @@ const User = () => {
     ]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001')
+        axios.get('https://task-manager-mern-app.vercel.app/')
             .then(result => setUsers(result.data))
             .catch((err) => console.log(`No Task ${err}`))
     }, [])
