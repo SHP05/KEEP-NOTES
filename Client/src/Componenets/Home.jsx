@@ -4,13 +4,13 @@ import axios from "axios";
 const Home = () =>{
     const [todos,setTodos] = useState([]);
     useEffect(()=>{
-        axios.get('http://localhost:3001/get')
+        axios.get('https://task-manager-mern-app.vercel.app/get')
         .then(result => setTodos(result.data))
         .catch(err => console.log(err))
     },[])
 
     const hendleEdit = async (id) =>{
-        await axios.put('http://localhost:3001/update/'+id)
+        await axios.put('https://task-manager-mern-app.vercel.app/update/'+id)
         .then(result => setTodos(result))
         .catch(err => console.log(err))
     }
