@@ -26,7 +26,8 @@ const UpdateUser = () =>{
         axios.put('https://task-manager-mern-app.vercel.app/update/'+id, {Title,Task} )
         .then(result=>{
           console.log(result)
-          navigate('/')     
+          navigate('/')  
+          window.location.reload(false);
         })
         .catch(err=>console.log(err))
     }
