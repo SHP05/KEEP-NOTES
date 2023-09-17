@@ -12,6 +12,7 @@ const Create = () =>{
       .then(result=>console.log(result))
       .catch(err=>console.log(err))
       navigate('/')
+      window.location.reload(false);
   }
 
   return(
