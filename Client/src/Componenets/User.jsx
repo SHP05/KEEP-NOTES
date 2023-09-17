@@ -15,7 +15,7 @@ const User = () => {
 
     const handleDelete = (id) => {
         console.log(id);
-        axios.delete('http://localhost:3001/deleteTask/' + id)
+        axios.delete('https://task-manager-mern-app.vercel.app/deleteTask/' + id)
             .then(res => console.log(res))
             .catch(err => console.log(err))
         window.location.reload(false);
