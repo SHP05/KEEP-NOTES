@@ -13,9 +13,9 @@ const User = () => {
             .catch((err) => console.log(`No Task ${err}`))
     }, [])
 
-    const handleDelete = (id) => {
+    const handleDelete = async (id) => {
         console.log(id);
-        axios.delete('https://task-manager-mern-app.vercel.app/deleteTask/' + id)
+        await axios.delete('https://task-manager-mern-app.vercel.app/deleteTask/' + id)
             .then(res => console.log(res))
             .catch(err => console.log(err))
         window.location.reload(false);
