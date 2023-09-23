@@ -6,9 +6,9 @@ const Create = () =>{
   const [task,setTask] = useState();
 
   const navigate = useNavigate();
-  const submitHandeler = (e) =>{
+  const submitHandeler = async (e) =>{
       e.preventDefault();
-      axios.post('https://task-manager-mern-app.vercel.app/create',{title,task})
+      await axios.post('https://task-manager-mern-app.vercel.app/create',{title,task})
       .then(result=>console.log(result))
       .catch(err=>console.log(err))
       navigate('/')
