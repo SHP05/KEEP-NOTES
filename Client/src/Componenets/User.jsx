@@ -8,14 +8,14 @@ const User = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001')
+        axios.get('https://task-manager-mern-app.vercel.app/')
             .then(result => setUsers(result.data))
             .catch((err) => console.log(`No Task ${err}`))
     }, [])
 
     const handleDelete = (id) => {
         console.log(id);
-        axios.delete('http://localhost:3001/deleteTask/' + id)
+        axios.delete('https://task-manager-mern-app.vercel.app/deleteTask/' + id)
             .then(res => console.log(res))
             .catch(err => console.log(err))
         window.location.reload(false);

@@ -5,9 +5,15 @@ const cors = require('cors');
 const e = require('cors');
 const app = express();
 const model = require('./model/task');
-const PORT = process.env.PORT || 3001;
+// const PORT = process.env.PORT || 3001;
 
-app.use(cors())
+app.use(cors(
+  {
+    origin: ["https://task-manager-mern-frontend-app-y9rc.vercel.app"],
+    methods: ["GET","POST","PUT","DELETE"],
+    credentials: true
+  }
+))
 app.use(express.json())
 // Connect to MongoDB Atlas
 mongoose.connect('mongodb+srv://shyamjpankhaniya05:tPuWYrt3oorJ7e0o@usertasks.mziilxo.mongodb.net/?retryWrites=true&w=majority', {
@@ -58,4 +64,4 @@ app.delete('/deleteTask/:id',(req,res)=>{
   .catch(err=> res.json(err))
 })
 
-app.listen(PORT,()=>{console.log("app is running on http://localhost:3001")})
+app.listen(3001,()=>{console.log("app is running on http://localhost:3001")})
