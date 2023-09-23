@@ -20,10 +20,10 @@ const UpdateUser = () =>{
         .catch(err=>console.log(err))
     },[])
 
-    const updateHandeler = (e) =>{
+    const updateHandeler = async (e) =>{
         e.preventDefault();
         console.log(Title,Task)
-        axios.put('https://task-manager-mern-app.vercel.app/update/'+id, {Title,Task} )
+        await axios.put('https://task-manager-mern-app.vercel.app/update/'+id, {Title,Task} )
         .then(result=>{
           console.log(result)
           navigate('/')  
