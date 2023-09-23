@@ -5,9 +5,7 @@ import "../../public/style.css"
 
 const User = () => {
 
-    const [users, setUsers] = useState([
-        { title: "Task1", task: "Create React App", data: "15/09/23" }
-    ]);
+    const [users, setUsers] = useState([]);
 
     useEffect(() => {
         axios.get('http://localhost:3001')

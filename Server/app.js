@@ -18,11 +18,11 @@ app.use(cors())
 app.use(express.json())
 
 // post request from frontend
-app.post('/add',(req,res)=>{
+app.post('/add',async(req,res)=>{
   const task = req.body.task
   const title = req.body.title
 
-  model.create({
+  await model.create({
     title:title, 
     task:task
   }).then(result => res.json(result))
@@ -30,8 +30,8 @@ app.post('/add',(req,res)=>{
 })
 
 // get data in frontend
-app.get('/get',(req,res)=>{
-  model.find()
+app.get('/get',async(req,res)=>{
+  await model.find()
   .then(result => res.json(result))
   .catch(err => res.json(err))
 })

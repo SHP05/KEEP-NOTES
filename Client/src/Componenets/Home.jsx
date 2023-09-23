@@ -24,7 +24,7 @@ const Home = () =>{
             { 
                 todos.length === 0 ? (<h1>No Todo</h1>)
                 : todos.map((todo,key) => (
-                <div key={key}>
+                <div key={key} className="mostly-customized-scrollbar">
                     <span>{todo.title}</span>
                     <h3>{todo.task}</h3>
                     <button onClick={() =>hendleEdit(todo._id)}>Edit</button>
