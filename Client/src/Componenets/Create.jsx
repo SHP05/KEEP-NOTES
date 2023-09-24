@@ -6,9 +6,9 @@ const Create = () =>{
   const [task,setTask] = useState();
 
   const navigate = useNavigate();
-  const submitHandeler = (e) =>{
+  const submitHandeler = async (e) =>{
       e.preventDefault();
-      axios.post('https://task-manager-mern-app.vercel.app/create',{title,task})
+      await axios.post('https://task-manager-mern-app.vercel.app/create',{title,task})
       .then(result=>console.log(result))
       .catch(err=>console.log(err))
       navigate('/')
@@ -38,29 +38,3 @@ const Create = () =>{
 }
 
 export default Create;
-
-// import { useEffect, useState } from "react";
-// import axios from "axios"
-
-// const Create = () =>{
-//     const [task,setTask] = useState();   
-//     const [title,setTitle] = useState();   
-//     const addHandler = (event) => {
-//         event.preventDefault();
-//         axios.post("http://localhost:3001/add",{title:title,task:task})
-//         .then(result => console.log(result))
-//         .catch((e)=> console.log(e))
-// ;    } 
-//      useEffect(()=>{
-//      },[title])   
-//     return(
-//       <>
-//         <div>
-//           <input type="text" placeholder="Enter Title" onChange={(e)=> setTitle(e.target.value)}/>
-//           <input type="text" placeholder="Enter Task" onChange={(e)=> setTask(e.target.value)}/>
-//           <button onClick={addHandler}>Add</button>
-//         </div>
-//       </>
-//     )
-//   }
-//   export default Create;
