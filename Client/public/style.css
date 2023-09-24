@@ -3,8 +3,8 @@
     /* background-color: #3D747B; */
 }
 .taskcontainer{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 20px 0px 0px 20px;
     justify-content: space-evenly;
 }
@@ -97,13 +97,13 @@
     border-radius: 15px;
 }
 
-@media only screen and(min-width:768px) and (max-width:991px){
+@media(min-width:768px) and (max-width:991px){
     .taskcontainer{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
-@media only screen and(min-width:768px){
+@media(min-width:768px){
     .taskcontainer{
         display: grid;
         grid-template-columns: 1fr;
