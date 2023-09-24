@@ -69,10 +69,10 @@ Before you begin, ensure you have met the following requirements:
 - npm install
 
 ##  How to Use the Project
-    ###first Run the server
+   ### first Run the server
     - cd server
     - nodemon app.js  or npm start 
-    ###Second run Frontend
+   ### Second run Frontend
     - cd client
     - npm run dev
     - open link which is given in console after run Frontend
