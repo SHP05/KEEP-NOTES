@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const model = require('./model/task');
-// const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors(
   {
@@ -63,4 +63,4 @@ app.delete('/deleteTask/:id',(req,res)=>{
   .catch(err=> res.json(err))
 })
 
-app.listen(3001,()=>{console.log("app is running on http://localhost:3001")})
+app.listen(PORT,()=>{console.log("app is running on http://localhost:3001")})
