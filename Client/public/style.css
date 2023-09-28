@@ -73,7 +73,21 @@
     background-color: #A74733;
     color: white;
 }
+.add-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.btn-add{
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    position: relative;
+    place-items: center;
+    background-color: black;
+    color: #828282;
+}
 /* Create Task and update task */
 .main{
     display: grid;

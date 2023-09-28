@@ -27,10 +27,9 @@ const User = () => {
             <center><Link to="/create" className="btn btn-warning my-4 rounded-5">Add Task+</Link></center>
             <div className="main">
                 <div className="taskcontainer">
-                    <div className="cards">
+                    <div className="cards add-card">
                         <button className="btn-add" onClick={()=> <Create/>}> 
-                        <Link to="/create">+</Link>
-                        ADD TASK
+                        <Link to="/create">+<br/>ADD TASK</Link>
                         </button>
                     </div>
                 {
