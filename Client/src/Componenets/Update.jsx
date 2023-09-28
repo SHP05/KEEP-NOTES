@@ -18,7 +18,7 @@ const UpdateUser = () =>{
             setTask(result.data.task)
         })
         .catch(err=>console.log(err))
-    },[])
+    })
 
     const updateHandeler = async (e) =>{
         e.preventDefault();
