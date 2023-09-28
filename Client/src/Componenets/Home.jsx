@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Create from "./Create";
 import axios from "axios";
-
+import './home.css'
 const Home = () =>{
     const [todos,setTodos] = useState([]);
 
