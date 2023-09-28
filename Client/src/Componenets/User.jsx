@@ -28,8 +28,8 @@ const User = () => {
             <div className="main">
                 <div className="taskcontainer">
                     <div className="cards add-card">
-                        <button className="btn-add" onClick={()=> <Create/>}> 
-                        <Link to="/create">+<br/>ADD TASK</Link>
+                        <button className="btn-add my-1 mx-1" onClick={()=> <Create/>}> 
+                        <Link to="/create" >+<br/>ADD TASK</Link>
                         </button>
                     </div>
                 {

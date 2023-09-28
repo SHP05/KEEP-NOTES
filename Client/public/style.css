@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Libre+Baskerville&display=swap');.main{
-    /* background-size: cover; */
-    /* background-color: #3D747B; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Libre+Baskerville&display=swap');
+
 .taskcontainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -78,11 +76,11 @@
     align-items: center;
     justify-content: center;
 }
-
 .btn-add{
-    height: 70px;
-    width: 70px;
-    margin: auto;
+    height: 200px;
+    width: 200px;
+    border: 0.5px solid gray;
+    border-radius: 50px;
     position: relative;
     place-items: center;
     background-color: black;
