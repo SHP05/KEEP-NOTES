@@ -19,7 +19,7 @@ const Home = () =>{
         axios.get('https://task-manager-mern-app.vercel.app/get')
         .then(result => {
             setTodos(result.data)
-            setLoading(false)
+            setLoading(true)
         })
         .catch(err => console.log(err))
     },[])
