@@ -36,7 +36,7 @@ const Home = () =>{
             <h1>Todo List</h1>
             <Create />
             { 
-             loading ? (
+             todos.length === 0 || loading ? (
                 <div className="loader-container">
                   {/* <div className="spinner"></div> */}
                   <div className="custom-loader"></div>
