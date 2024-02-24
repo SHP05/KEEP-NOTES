@@ -76,15 +76,26 @@
     align-items: center;
     justify-content: center;
 }
+#card-text{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    text-align: center;
+    font-size: x-large;   
+    align-items: center;
+    text-decoration: none;
+}
 .btn-add{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border: 0.5px solid gray;
-    border-radius: 50px;
-    position: relative;
+    border-radius: 90px;
+    /* position: relative; */
     place-items: center;
-    background-color: black;
-    color: #828282;
+    background-color: #656566;
+    color: black;
+    text-decoration: none;
+    padding: 50px;
 }
 /* Create Task and update task */
 .main{

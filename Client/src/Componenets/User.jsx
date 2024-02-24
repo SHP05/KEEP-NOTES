@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../public/style.css"
-import Create from "./Create";
+// import Create from "./Create";
 
 const User = () => {
 
@@ -28,15 +28,16 @@ const User = () => {
             <div className="main">
                 <div className="taskcontainer">
                     <div className="cards add-card">
-                        <button className="btn-add my-1 mx-1" onClick={()=> <Create/>}> 
-                        <Link to="/create" >+<br/>ADD TASK</Link>
-                        </button>
+                        <Link to="/create" >
+                        <p id="card-text">Add Task</p>
+                        {/* <button className="btn-add my-1 mx-1" onClick={()=> <Create/>}><h1>Add Task</h1></button> */}
+                        </Link>
                     </div>
                 {
 
                     users.length == 0
                         ?
-                        <h2>No Task Available</h2>
+                        <h2><br />No Task Available</h2>
                         :
                         users.map(
                             (task) => {

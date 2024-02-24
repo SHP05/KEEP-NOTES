@@ -7,13 +7,6 @@ const app = express();
 const model = require('./model/task');
 const PORT = process.env.PORT || 3001;
 
-// Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://shyamjpankhaniya05:tPuWYrt3oorJ7e0o@usertasks.mziilxo.mongodb.net/?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(()=> console.log("DB Connected Successfuly"))
-.catch((e)=> console.log(e));
-
 app.use(cors())
 app.use(express.json())
 
