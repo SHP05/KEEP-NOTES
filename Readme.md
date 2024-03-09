@@ -2,11 +2,9 @@
 Streamline your task management process with this MERN (MongoDB, Express, React, Node.js) stack CRUD app. Seamlessly create, read, update, and delete tasks to boost your productivity and organization.
 
 Project Description
-- I build this app using REact JS, Node JS , Express Js and MongoDB.
+- I build this app using React JS, Node JS , Express Js and MongoDB.
 - Efficiently you can create , update , delete your tasks.
-- i used this 
-
-![Project Logo/Preview](link-to-your-logo-or-preview-image)
+- Real-time task updates with live database synchronization. 
 
 ## Table of Contents
 
