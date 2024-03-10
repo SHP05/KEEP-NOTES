@@ -48,27 +48,28 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
 
-   ```bash
    git clone https://github.com/yourusername/mern-crud-task-management.git
    cd mern-crud-task-management
 
 
 ### Install server dependencies:
-- cd server
-- npm install
+    
+    cd server
+    npm install
 
 ### Install client dependencies:
-- cd client
-- npm install
+    
+    cd client
+    npm install
 
 ##  How to Use the Project
-   ### first Run the server
-    - cd server
-    - nodemon app.js  or npm start 
+   ### First Run the server
+       cd server
+       nodemon app.js  or npm start 
    ### Second run Frontend
-    - cd client
-    - npm run dev
-    - open link which is given in console after run Frontend
+      cd client
+      npm run dev
+  open link which is given in console after run Frontend
 
 ### Functionality
   Creating a Task: Easily create new tasks with titles, descriptions, and due dates.
